@@ -27,7 +27,7 @@
     //添加collectionView，self自动调用set get方法
     [self.view addSubview:self.collectionView];
     
-    //设置其资源 添加50个随机颜色
+    //设置数据源添加，50个随机颜色，透明度0.8
     _dataSource = [NSMutableArray array];
     for (int i = 1; i <= 50; i++) {
         CGFloat hue = ( arc4random() % 256 / 256.0 ); //0.0 to 1.0
